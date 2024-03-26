@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/AdeebAlk/testimonials-grid-section)
+- Live Site URL: [live site](https://adeebalk.github.io/testimonials-grid-section/)
 
 ## My process
 
@@ -41,4 +41,4 @@ the main thing was using the css grid
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@@AdeebAlk](https://www.frontendmentor.io/profile/AdeebAlk)
