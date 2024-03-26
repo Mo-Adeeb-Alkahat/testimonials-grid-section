@@ -1,0 +1,252 @@
+/* ### Primary
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacityy
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || GENERAL STYLES */
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  min-height: 100vh;
+}
+main {
+  min-width: 80%;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.card img {
+  border-radius: 100px;
+  position: absolute;
+}
+
+.dan {
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-position-x: 80%;
+  background-color: hsl(263, 55%, 52%);
+  grid-area: dan;
+}
+
+.dan img {
+  border: 2px solid hsl(263, 60%, 74%);
+}
+
+.dan span {
+  display: block;
+  margin-left: 3rem;
+  font-size: 13px;
+  color: hsl(0, 0%, 100%);
+}
+
+.dan .verified {
+  color: hsla(0, 0%, 100%, 0.5) !important;
+  font-size: 11px !important;
+  margin-bottom: 1rem;
+}
+
+.dan h4 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.dan p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.jon {
+  grid-area: jon;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.jon span {
+  display: block;
+  margin-left: 3rem;
+  font-size: 13px;
+  color: hsl(0, 0%, 100%);
+}
+
+.jon .verified {
+  color: hsla(0, 0%, 100%, 0.5) !important;
+  font-size: 11px !important;
+  margin-bottom: 1rem;
+}
+
+.jon h4 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.jon p {
+  color: hsla(0, 0%, 100%, 0.595);
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.jen {
+  grid-area: jen;
+  background-color: white;
+}
+
+.jen span {
+  display: block;
+  margin-left: 3rem;
+  font-size: 13px;
+  color: hsl(217, 19%, 35%);
+}
+
+.jen .verified {
+  color: hsl(217, 19%, 35%, 0.5) !important;
+  font-size: 11px !important;
+  margin-bottom: 1rem;
+}
+
+.jen h4 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.jen p {
+  color: hsla(217, 19%, 35%, 0.595);
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.pat {
+  grid-area: pat;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.pat span {
+  display: block;
+  margin-left: 3rem;
+  font-size: 13px;
+  color: hsl(0, 0%, 100%);
+}
+
+.pat .verified {
+  color: hsl(0, 0%, 81%, 0.5) !important;
+  font-size: 11px !important;
+  margin-bottom: 1rem;
+}
+
+.pat h4 {
+  color: hsl(0, 0%, 81%);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.pat img {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+.pat p {
+  color: hsla(0, 0%, 81%, 0.595);
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.kira {
+  grid-area: kira;
+  background-color: white;
+}
+
+.kira span {
+  display: block;
+  margin-left: 3rem;
+  font-size: 13px;
+  color: hsl(217, 19%, 35%);
+}
+
+.kira .verified {
+  color: hsl(217, 19%, 35%, 0.5) !important;
+  font-size: 11px !important;
+  margin-bottom: 1rem;
+}
+
+.kira h4 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.kira p {
+  color: hsla(217, 19%, 35%, 0.595);
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1023px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    max-width: 75%;
+    display: grid;
+    grid-template-areas:
+      "dan dan dan jon kira"
+      "jen pat pat pat kira";
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px !important;
+    margin-top: 0.5rem;
+  }
+  .kira {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kira p {
+    min-height: 100%;
+    padding-right: 1.5rem;
+    line-height: 1.5rem;
+  }
+  main p {
+    font-weight: 600 !important;
+  }
+}
