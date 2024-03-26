@@ -217,6 +217,8 @@ main {
     align-items: center;
   }
   main {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     max-width: 75%;
     display: grid;
     grid-template-areas:
@@ -241,11 +243,6 @@ main {
     flex-direction: column;
   }
 
-  .kira p {
-    min-height: 100%;
-    padding-right: 1.5rem;
-    line-height: 1.5rem;
-  }
   main p {
     font-weight: 600 !important;
   }
