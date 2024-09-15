@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution](https://github.com/AdeebAlk/testimonials-grid-section)
-- Live Site URL: [live site](https://adeebalk.github.io/testimonials-grid-section/)
+- Live Site URL: [live site](https://Mo-Adeeb-Alkahat.github.io/testimonials-grid-section/)
 
 ## My process
 
